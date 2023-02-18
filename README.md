@@ -1,4 +1,4 @@
-# Magazine Domain
+# Magazine App
 This project is a Ruby application for managing a Magazine domain, including the relationships between Authors, Articles, and Magazines. It includes various classes and methods for creating and managing instances of these objects.
 
 ## Installation
