@@ -5,7 +5,7 @@ This project is a Ruby application for managing a Magazine domain, including the
 1. Clone this repository to your local machine.
 2. Navigate to the root directory of the project.
 3. Run bundle install to install the necessary gems
-4. To start the application, run `ruby magazine.rb `from the command line
+4. To start the application, run `ruby bin/run `from the command line
 ## Usage
 Once the application is running, you can create instances of the various classes and try out the methods that are available.
 

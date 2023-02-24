@@ -1,0 +1,25 @@
+require_relative '../config/environment.rb'
+
+# Create some authors and magazines
+author1 = Author.new("Casey Ochieng")
+author2 = Author.new("Linah")
+magazine1 = Magazine.new("Sports Illustrated", "Sports")
+magazine2 = Magazine.new("National Geographic", "Science")
+
+# Add articles to the authors
+author1.add_article(magazine1, "The History of Dopeness")
+author2.add_article(magazine1, "The Future of Casey")
+author2.add_article(magazine2, "UI verse")
+
+# Test the associations and aggregate methods
+puts author1.articles.map { |article| article.title }
+# Output: ["The History of Basketball"]
+
+puts author2.magazines.map { |magazine| magazine.name }
+# Output: ["Sports Illustrated", "National Geographic"]
+
+puts magazine1.article_titles
+# Output: ["The History of Basketball", "The Future of Soccer"]
+
+puts magazine2.contributors.map { |author| author.name }
+# Output: ["Jane Smith"]
